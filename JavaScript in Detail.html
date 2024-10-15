@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript  </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="Max0"></p>
+    <p id="Max1"></p>
+    <p id="Max2"></p>
+    <p id="Max3"></p>
+
+   <script>
+ var x = 10;
+ var y = 50;
+document.getElementById("Max0").innerHTML= x+y;
+document.getElementById("Max1").innerHTML = String(x)+String(y);
+
+try{
+    addalart("Welcome Guest!");
+}
+catch(err){
+document.getElementById("Max2").innerHTML =err.message ;
+}
+
+   </script>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+<script src="script3.js"></script>
+
+<script>
+    add = (a, b) => a + b;
+document.getElementById("Max3").innerHTML= add (5,10);
+</script>
+
+
+</body>
+</html>
